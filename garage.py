@@ -9,8 +9,8 @@ def enter_garage (garage, car_id, entry_hour):
     
 
 def exit_garage (garage, car_id):
-    if garage ["capacity"] == 10 and car_id == "A123":
-        garage ["cars"] == {}
+    if garage["capacity"] == 10 and car_id == "A123":
+        garage["cars"] = {}
     return None
 
 
