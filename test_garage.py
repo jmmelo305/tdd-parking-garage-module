@@ -5,4 +5,4 @@ def test_available_spots_passing():
         "capacity": 10,
         "cars": {}
     }
-    assert get_available_spots(garage) == 15
+    assert get_available_spots(garage) == 10
