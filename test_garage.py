@@ -10,6 +10,14 @@ def test_enter_garage_A123_at_10():
     assert garage["cars"] == {"A123": 10}
     assert result is None
 
+def test_enter_garage_duplicate_value_error():
+    garage = {
+        "capacity": 10,
+        "cars": {"A123": 10}
+    }
+    with pytest.raises(ValueError):
+        enter_garage(garage, "A123", 11)
+
 # get_available_spots
 def test_get_available_spots_passing():
     garage = {
