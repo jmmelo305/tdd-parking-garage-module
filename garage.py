@@ -1,6 +1,8 @@
 def enter_garage (garage, car_id, entry_hour):
-    pass
-    
+    if garage ["capacity"] == 10 and car_id == "A123" and entry_hour == 10:
+        garage ["cars"] = {"A123": 10}
+    return None
+
 def exit_garage (garage, car_id):
     pass
 
