@@ -15,7 +15,7 @@ def test_available_spots_spot_taken():
     }
     assert get_available_spots(garage) == 8
 
-def test_available_spots_never_negative ()
+def test_available_spots_never_negative ():
     garage = {
         "capacity": 1,
         "cars": {"A", 1, "B", 2}
