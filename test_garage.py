@@ -6,9 +6,8 @@ def test_enter_passes ():
         "cars": {}
     }
     enter_garage(garage, "A123", 10)
-    assert "A123" in garage ["cars"]
-
-
+    assert garage["cars"] == {"A123": 10}
+    assert enter_garage is None
 
 
 def test_available_spots_passing():
