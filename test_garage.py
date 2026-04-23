@@ -1,4 +1,15 @@
-from garage import get_available_spots
+from garage import get_available_spots, enter_garage
+
+def test_enter_passes ():
+    garage = {
+        "capacity": 10,
+        "cars": {}
+    }
+    enter_garage(garage, "A123", 10)
+    assert "A123" in garage ["cars"]
+
+
+
 
 def test_available_spots_passing():
     garage = {
@@ -6,7 +17,6 @@ def test_available_spots_passing():
         "cars": {}
     }
     assert get_available_spots(garage) == 10
-
 
 def test_available_spots_spot_taken():
     garage = {
