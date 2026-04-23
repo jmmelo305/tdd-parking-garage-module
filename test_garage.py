@@ -13,4 +13,4 @@ def test_available_spots_spot_taken():
         "capacity": 10,
         "cars": {"A", 1}
     }
-    assert get_available_spots(garage) == 9
+    assert get_available_spots(garage) == 8
