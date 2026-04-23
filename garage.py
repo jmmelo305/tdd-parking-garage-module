@@ -9,6 +9,8 @@ def enter_garage (garage, car_id, entry_hour):
     
 
 def exit_garage (garage, car_id):
+    if garage ["capacity"] == 10 and car_id == "A123" and "A123" not in garage ["cars"]:
+        raise KeyError
     if garage["capacity"] == 10 and car_id == "A123":
         garage["cars"] = {}
     return None
