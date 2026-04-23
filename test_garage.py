@@ -1,8 +1,8 @@
-from garage import enter_garage
+from garage import available_spots
 
-def test_enter_garage_passing():
+def test_available_spots_passing():
     garage = {
         "capacity": 10,
         "cars": {}
     }
-    assert enter_garage(garage) == 15
+    assert available_spots(garage) == 15
