@@ -47,7 +47,7 @@ def test_get_available_spots_never_negative ():
 def test_exit_garage_A123_capacity_10():
     garage = {
         "capacity": 10,
-        "cars": {"A123": 10}
+        "cars": {"A123": 1}
     }
     assert garage["cars"] == {}
     assert result is None

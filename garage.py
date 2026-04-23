@@ -13,6 +13,10 @@ def exit_garage (garage, car_id):
         garage ["cars"] == {}
     return None
 
+
+
+
+
 def get_available_spots(garage):
     spots = garage["capacity"] - len(garage["cars"])
     return max(spots, 0)
