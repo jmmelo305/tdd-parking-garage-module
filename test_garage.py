@@ -1,3 +1,4 @@
+import pytest
 from garage import get_available_spots, enter_garage
 # enter_garage
 def test_enter_garage_A123_at_10():
