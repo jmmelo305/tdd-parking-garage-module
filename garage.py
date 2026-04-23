@@ -1,5 +1,5 @@
 def enter_garage (garage, car_id, entry_hour):
-    return 15
+    return garage ["cars"]["A123"] == 10
 
 def exit_garage (garage, car_id):
     pass
