@@ -1,5 +1,5 @@
 import pytest
-from garage import get_available_spots, enter_garage
+from garage import get_available_spots, enter_garage, exit_garage
 # enter_garage
 def test_enter_garage_A123_at_10():
     garage = {
@@ -40,3 +40,14 @@ def test_get_available_spots_never_negative ():
         "cars": {"A", 1, "B", 2}
     }
     assert get_available_spots(garage) == 0
+
+
+# exit_garage
+
+def test_exit_garage_A123_capacity_10():
+    garage = {
+        "capacity": 10,
+        "cars": {"A123": 10}
+    }
+    assert garage["cars"] == {}
+    assert result is None
