@@ -1,13 +1,14 @@
 from garage import get_available_spots, enter_garage
 
-def test_enter_passes ():
+def test_enter_garage_A123_at_10():
     garage = {
         "capacity": 10,
         "cars": {}
     }
-    enter_garage(garage, "A123", 10)
+
+    result = enter_garage(garage, "A123", 10)
     assert garage["cars"] == {"A123": 10}
-    assert enter_garage is None
+    assert result is None
 
 
 def test_available_spots_passing():
