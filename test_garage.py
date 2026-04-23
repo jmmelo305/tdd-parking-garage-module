@@ -53,3 +53,10 @@ def test_exit_garage_A123_capacity_10():
     result = exit_garage(garage, "A123")
     assert garage["cars"] == {}
     assert result is None
+
+def test_exit_garage_missing_value():
+    garage = {
+        "capacity": 10, 
+        "cars": {}}
+    with pytest.raises(KeyError):
+        exit_garage(garage, "A123")
