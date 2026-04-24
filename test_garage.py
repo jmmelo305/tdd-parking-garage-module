@@ -69,4 +69,12 @@ def test_calculate_fee_2_and_5():
 
 def test_calculate_fee_rounding ():
     assert calculate_fee(2.333, 3) == round(2.333 * 3, 2)
-    
+
+@pytest.mark.parametrize("hours, rate, expected", [
+    (2, 5, 10.00),
+    (1, 10, 10.00),
+    (3, 5, 6.00),
+])
+
+def test_calculate_fee_multiple_test(hours, rate, expected):
+    assert calculate_fees(hours, rate) == expected
