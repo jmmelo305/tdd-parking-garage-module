@@ -22,7 +22,4 @@ def get_available_spots(garage):
 
 
 def calculate_fee(hours,rate):
-    if hours == 2 and rate == 5:
-        return 10.00
-    if hours == 2.333 and rate == 3:
-        return round(2.333 * 3, 2)
+    return round(hours * rate, 2)
