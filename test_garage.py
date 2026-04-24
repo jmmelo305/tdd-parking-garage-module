@@ -66,3 +66,7 @@ def test_exit_garage_missing_value():
 def test_calculate_fee_2_and_5():
     result = calculate_fee (2,5)
     assert result == 10.0
+
+def test_calculate_fee_rounding ():
+    assert calculate_fee(2.333, 3) == round(2.333 * 3, 2)
+    
