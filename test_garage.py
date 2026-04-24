@@ -77,4 +77,4 @@ def test_calculate_fee_rounding ():
 ])
 
 def test_calculate_fee_multiple_test(hours, rate, expected):
-    assert calculate_fees(hours, rate) == expected
+    assert calculate_fee(hours, rate) == expected
