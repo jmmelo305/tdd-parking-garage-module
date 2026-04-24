@@ -73,7 +73,7 @@ def test_calculate_fee_rounding ():
 @pytest.mark.parametrize("hours, rate, expected", [
     (2, 5, 10.00),
     (1, 10, 10.00),
-    (3, 5, 6.00),
+    (3, 5, 15.00),
 ])
 
 def test_calculate_fee_multiple_test(hours, rate, expected):
